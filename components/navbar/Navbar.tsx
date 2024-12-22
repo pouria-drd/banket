@@ -24,9 +24,9 @@ const Navbar = () => {
                     className="bg-ada-secondary-50
                     flex flex-row-reverse lg:flex-row items-center justify-between
                     transition-all duration-300 text-white
-                    lg:rounded-[40px] px-6 py-3 h-[64px]
-                    gap-2 xl:gap-4 2xl:gap-6">
-                    <BanketIcon />
+                    lg:rounded-[40px] py-3 h-[64px]
+                    gap-2 xl:gap-4 2xl:gap-6 px-2 sm:px-6">
+                    <BanketIcon className="hidden lg:block" />
 
                     <LinkManager
                         links={navLinks}
@@ -44,12 +44,11 @@ const Navbar = () => {
                     <Button
                         target="_blank"
                         href="https://trc.metrix.ir/ndjwlw/"
-                        className="hidden lg:block             
-                        px-4 md:px-6 lg:px-8 xl:px-12 py-2
-                        text-ada-neutral-10 text-nowrap
-                        text-xs lg:text-sm xl:text-base">
+                        className="px-4 md:px-6 lg:px-8 xl:px-12 py-2 text-xs lg:text-sm xl:text-base">
                         دانلود بانکت
                     </Button>
+
+                    <BanketIcon className="block lg:hidden" />
 
                     <MenuButton
                         className="lg:hidden"
