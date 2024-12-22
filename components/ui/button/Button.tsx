@@ -26,9 +26,9 @@ const Button: React.FC<CombinedProps> = ({
             `bg-ada-primary-50 hover:bg-ada-primary-50/95
             transition-all duration-75 
             font-bold rounded-[20px]
-            px-4 md:px-6 xl:px-8 2xl:px-12 py-2
+            px-4 md:px-8 lg:px-12 py-2
             text-ada-neutral-10 text-nowrap
-            text-xs xl:text-sm 2xl:text-base`,
+            text-sm md:text-base`,
             className
         );
 
