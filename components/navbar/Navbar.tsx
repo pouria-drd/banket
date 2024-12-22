@@ -5,11 +5,11 @@ import { Sidebar } from "../sidebar";
 import { isLinkActive } from "@/utils";
 import LinkManager from "./LinkManager";
 import { Button } from "@/components/ui";
+import { MenuButton } from "../ui/button";
 import { Fragment, useState } from "react";
 import { usePathname } from "next/navigation";
 import { BanketIcon } from "@/components/icons";
 import { AnimatePresence } from "framer-motion";
-import { MenuButton } from "../ui/button";
 import { baseNavlinks } from "@/constants/navlinks";
 
 const Navbar = () => {
@@ -41,10 +41,7 @@ const Navbar = () => {
                         )}
                     />
 
-                    <Button
-                        href="/"
-                        className="hidden lg:block px-4 md:px-6 xl:px-8
-                        2xl:px-12 text-xs xl:text-sm 2xl:text-base">
+                    <Button href="/" className="hidden lg:block">
                         دانلود بانکت
                     </Button>
 
