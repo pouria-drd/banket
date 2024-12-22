@@ -3,10 +3,7 @@
 import { cn } from "@/utils";
 import { MenuIcon } from "@/components/icons";
 
-interface MenuButtonProps
-    extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
-
-const MenuButton: React.FC<MenuButtonProps> = ({
+const MenuButton: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement>> = ({
     children,
     className,
     ...props

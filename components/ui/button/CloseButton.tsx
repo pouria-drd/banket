@@ -3,10 +3,7 @@
 import { cn } from "@/utils";
 import { CloseIcon } from "@/components/icons";
 
-interface CloseButtonProps
-    extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
-
-const CloseButton: React.FC<CloseButtonProps> = ({
+const CloseButton: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement>> = ({
     children,
     className,
     ...props
@@ -18,6 +15,7 @@ const CloseButton: React.FC<CloseButtonProps> = ({
                 className
             )}
             {...props}>
+            {children}
             <CloseIcon />
         </button>
     );
