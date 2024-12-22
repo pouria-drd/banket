@@ -42,7 +42,8 @@ const Navbar = () => {
                     />
 
                     <Button
-                        href="/"
+                        target="_blank"
+                        href="https://trc.metrix.ir/ndjwlw/"
                         className="hidden lg:block             
                         px-4 md:px-6 lg:px-8 xl:px-12 py-2
                         text-ada-neutral-10 text-nowrap

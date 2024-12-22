@@ -75,7 +75,10 @@ const Sidebar = (props: SidebarProps) => {
                     />
                 )}
             />
-            <Button href="/" className="absolute px-4 text-sm bottom-10">
+            <Button
+                target="_blank"
+                href="https://trc.metrix.ir/ndjwlw/"
+                className="absolute px-4 text-sm bottom-10">
                 دانلود بانکت
             </Button>
         </motion.aside>
