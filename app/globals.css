@@ -11,7 +11,7 @@ body {
 /* Scroll area */
 
 ::-webkit-scrollbar {
-    @apply bg-gray-200 w-1.5 h-1;
+    @apply bg-gray-200 w-2 h-2;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
@@ -25,6 +25,34 @@ body {
 * {
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tailwind are */
+
+@layer utilities {
+    .glass {
+        backdrop-filter: blur(20px) saturate(150%);
+        -webkit-backdrop-filter: blur(20px) saturate(150%);
+    }
+
+    .app-px {
+        @apply px-4 lg:px-12 xl:px-24 2xl:px-36;
+    }
+
+    .active-navlink {
+        background: linear-gradient(
+            270deg,
+            rgba(64, 66, 66, 0.5) 0%,
+            rgba(104, 107, 108, 0.28) 49.5%,
+            rgba(255, 255, 255, 0.05) 100%
+        );
+        box-shadow: -1px -1px 4px 0px rgba(0, 0, 0, 0.25) inset,
+            -1px -1px 7px 0px rgba(255, 255, 255, 0.4) inset,
+            1px 1px 4px 0px rgba(0, 0, 0, 0.25) inset,
+            1px 1px 6px 0px rgba(255, 255, 255, 0.7) inset;
+        backdrop-filter: blur(2px);
+    }
 }
 
 /* ---------------------------------------------------------------------- */

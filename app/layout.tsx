@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { Navbar } from "@/components/navbar";
 
 export async function generateMetadata(): Promise<Metadata> {
     return {
@@ -59,7 +60,10 @@ interface RootLayoutProps {
 function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="fa-IR">
-            <body className={`antialiased font-peyda r2l`}>{children}</body>
+            <body className={`antialiased font-peyda r2l app-px`}>
+                <Navbar />
+                {children}
+            </body>
         </html>
     );
 }
