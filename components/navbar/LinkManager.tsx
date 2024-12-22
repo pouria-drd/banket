@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/utils";
+import { motion, Variants } from "framer-motion";
 
 interface LinkManagerProps {
     links: NavLink[];
@@ -9,10 +10,25 @@ interface LinkManagerProps {
 }
 
 const LinkManager = (props: LinkManagerProps) => {
+    const container: Variants = {
+        hidden: { opacity: 1 },
+        visible: {
+            opacity: 1,
+            transition: {
+                delayChildren: 0.2,
+                staggerChildren: 0.15,
+            },
+        },
+    };
+
     return (
-        <div className={cn("flex items-center", props.className)}>
+        <motion.div
+            variants={container}
+            initial="hidden"
+            animate="visible"
+            className={cn("flex items-center", props.className)}>
             {props.links.map((link, index) => props.renderItem(link, index))}
-        </div>
+        </motion.div>
     );
 };
 
