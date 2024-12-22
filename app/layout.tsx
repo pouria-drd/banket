@@ -60,9 +60,9 @@ interface RootLayoutProps {
 function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="fa-IR">
-            <body className={`antialiased font-peyda r2l app-px`}>
+            <body className={`antialiased font-peyda r2l`}>
                 <Navbar />
-                {children}
+                <main className="bg-white app-px">{children}</main>
             </body>
         </html>
     );

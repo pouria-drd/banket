@@ -4,7 +4,7 @@
 
 body {
     font-family: PeydaWebFaNum, Arial, Helvetica, sans-serif;
-    @apply to-white;
+    @apply bg-ada-secondary-50;
 }
 
 /* ---------------------------------------------------------------------- */
