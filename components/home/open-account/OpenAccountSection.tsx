@@ -1,14 +1,13 @@
 import { cn } from "@/utils";
 import { LoanImage } from ".";
 import Image from "next/image";
-import { Line } from "@/components/icons";
 import { Button, Caption, Container, H1Title } from "@/components/ui";
 
-interface LoanSectionProps {
+interface OpenAccountSectionProps {
     className?: string;
 }
 
-const LoanSection = (props: LoanSectionProps) => {
+const OpenAccountSection = (props: OpenAccountSectionProps) => {
     return (
         <section
             className={cn(
@@ -17,13 +16,7 @@ const LoanSection = (props: LoanSectionProps) => {
                 props.className
             )}>
             <Container className="items-start justify-start gap-0 w-full sm:w-fit">
-                <H1Title className="flex flex-col gap-0.5 sm:gap-2 lg:gap-4">
-                    <span>تا ۴۰۰ میلیون وام</span>
-                    <span>با دیجیتال بانک مهر ایران</span>
-                </H1Title>
-                <div className="relative w-full">
-                    <Line className="-top-1.5 sm:top-0 lg:top-1.5" />
-                </div>
+                <H1Title>افتتاح حساب رایگان</H1Title>
                 <Caption className="mt-6">
                     بانکت، دیجیتال  بانک قرض‌الحسنه مهر ایران با هدف تحول <br />
                     خدمات بانکی و امور مالی در عصر بانک های دیجیتال همراه <br />
@@ -34,7 +27,7 @@ const LoanSection = (props: LoanSectionProps) => {
                     target="_blank"
                     href="https://trc.metrix.ir/ndjwlw/"
                     className="mt-6">
-                    دانلود بانکت
+                    افتتاح حساب
                 </Button>
             </Container>
 
@@ -52,4 +45,4 @@ const LoanSection = (props: LoanSectionProps) => {
     );
 };
 
-export default LoanSection;
+export default OpenAccountSection;

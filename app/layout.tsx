@@ -62,7 +62,7 @@ function RootLayout({ children }: RootLayoutProps) {
         <html lang="fa-IR">
             <body className={`antialiased font-peyda r2l`}>
                 <Navbar />
-                <main className="bg-white app-px">{children}</main>
+                <main className="bg-white">{children}</main>
             </body>
         </html>
     );
