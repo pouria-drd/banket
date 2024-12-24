@@ -1,4 +1,5 @@
 import { Ticker } from "@/components/ticker";
+import { InBanketSection } from "@/components/home/in-banket";
 import { LoanSection, OpenAccountSection } from "@/components/home";
 
 function Home() {
@@ -9,60 +10,8 @@ function Home() {
             <LoanSection className="pt-6 sm:pt-[104px] app-px" />
             <Ticker words={words} />
             <OpenAccountSection className="app-px" />
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
-            <p className="bg-blue-200 h-40">
-                بانکت دیجیتال بانک مهر ایران 1403
-            </p>
+            <InBanketSection className="app-px" />
+            <OpenAccountSection className="app-px" />
         </div>
     );
 }
