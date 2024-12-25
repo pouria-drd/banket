@@ -6,20 +6,39 @@ import { isLinkActive } from "@/utils";
 import LinkManager from "./LinkManager";
 import { Button } from "@/components/ui";
 import { MenuButton } from "../ui/button";
-import { Fragment, useState } from "react";
 import { usePathname } from "next/navigation";
 import { BanketIcon } from "@/components/icons";
 import { AnimatePresence } from "framer-motion";
 import { baseNavlinks } from "@/constants/navlinks";
+import { Fragment /*, useEffect*/, useState } from "react";
 
 const Navbar = () => {
     const navLinks = baseNavlinks;
     const pathName = usePathname();
+    // const [isScrolled, setIsScrolled] = useState<boolean>(false);
     const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
 
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         if (window.scrollY > 500) {
+    //             setIsScrolled(true);
+    //         } else {
+    //             setIsScrolled(false);
+    //         }
+    //     };
+
+    //     window.addEventListener("scroll", handleScroll);
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //     };
+    // }, []);
+
+    // sticky top-0 z-50 ${
+    //     isScrolled ? "bg-transparent" : "bg-white"
+    // }
     return (
         <Fragment>
-            <header className="transition-all bg-white sticky top-0 z-50 lg:pt-10 lg:app-px">
+            <header className={`transition-all bg-white lg:pt-10 lg:app-px`}>
                 <nav
                     className="bg-ada-secondary-50
                     flex flex-row-reverse lg:flex-row items-center justify-between

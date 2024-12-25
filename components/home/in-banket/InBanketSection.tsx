@@ -11,25 +11,30 @@ const InBanketSection = (props: OpenAccountSectionProps) => {
         <section
             className={cn(
                 `relative flex flex-col sm:flex-row items-center min-h-dvh
-                justify-between gap-10 sm:gap-0 bg-cover bg-center`,
+                bg-gradient-to-r
+                from-[#D0D0CF]
+                to-[#EFEFEF]
+                justify-between gap-10 sm:gap-0`,
                 props.className
-            )}
-            style={{ backgroundImage: `url("/in-banket.png")` }}>
-            <Container className="items-start justify-start gap-0 w-full sm:w-fit z-10">
-                <H1Title>افتتاح حساب رایگان</H1Title>
-                <Caption className="mt-6">
-                    بانکت، دیجیتال  بانک قرض‌الحسنه مهر ایران با هدف تحول <br />
-                    خدمات بانکی و امور مالی در عصر بانک های دیجیتال همراه <br />
-                    شماست.
-                </Caption>
+            )}>
+            <div
+                className="bg-cover bg-center size-full min-h-dvh py-12"
+                style={{ backgroundImage: `url("/in-banket.png")` }}>
+                <Container className="items-center justify-center gap-6 sm:gap-12 w-full">
+                    <Container className="gap-6">
+                        <H1Title>تو بانکت همه چی تو جیاته</H1Title>
+                        <Caption className="text-center">
+                            خدمات بانکی و امور مالی رو تو بانکت استفاده کن ازش
+                        </Caption>
+                    </Container>
 
-                <Button
-                    target="_blank"
-                    href="https://trc.metrix.ir/ndjwlw/"
-                    className="mt-6">
-                    افتتاح حساب
-                </Button>
-            </Container>
+                    <Button
+                        target="_blank"
+                        href="https://trc.metrix.ir/ndjwlw/">
+                        خرید طلا
+                    </Button>
+                </Container>
+            </div>
         </section>
     );
 };
