@@ -1,6 +1,6 @@
 import { cn } from "@/utils";
-import { LollipopImage } from ".";
 import Image from "next/image";
+import { LollipopImage } from ".";
 import { Button, Caption, Container, H1Title } from "@/components/ui";
 
 interface OpenAccountSectionProps {
@@ -11,8 +11,7 @@ const OpenAccountSection = (props: OpenAccountSectionProps) => {
     return (
         <section
             className={cn(
-                `flex flex-col sm:flex-row items-center
-                justify-between gap-10 sm:gap-0`,
+                `flex flex-col sm:flex-row items-center justify-between gap-10 sm:gap-0`,
                 props.className
             )}>
             <Container className="items-start justify-start gap-0 w-full sm:w-fit">

@@ -10,8 +10,7 @@ const BuyGoldSection = (props: LoanSectionProps) => {
     return (
         <section
             className={cn(
-                `flex flex-col items-center
-                bg-ada-secondary-50 justify-between gap-6 sm:gap-10`,
+                `flex flex-col items-center bg-ada-secondary-50 justify-between gap-6 sm:gap-10`,
                 props.className
             )}>
             <Container className="items-center justify-center gap-6 sm:gap-10 w-full sm:w-fit">

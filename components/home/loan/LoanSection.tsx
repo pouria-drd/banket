@@ -12,8 +12,7 @@ const LoanSection = (props: LoanSectionProps) => {
     return (
         <section
             className={cn(
-                `flex flex-col sm:flex-row items-center
-                justify-between gap-10 sm:gap-0`,
+                `flex flex-col sm:flex-row items-center justify-between gap-10 sm:gap-0`,
                 props.className
             )}>
             <Container className="items-start justify-start gap-0 w-full sm:w-fit">
