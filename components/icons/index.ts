@@ -5,3 +5,5 @@ export { default as StarIcon } from "./StarIcon";
 export { default as CloseIcon } from "./CloseIcon";
 export { default as BanketIcon } from "./BanketIcon";
 export { default as BanketIcon2 } from "./BanketIcon2";
+export { default as MessageIcon } from "./MessageIcon";
+export { default as ArrowUpLeftIcon } from "./ArrowUpLeftIcon";

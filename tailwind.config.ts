@@ -62,9 +62,9 @@ export default {
 
                     dark: {
                         neutral: {
+                            40: "#3E424E",
                             90: "#DBDDE2",
                         },
-
                         outline: {
                             neutral: {
                                 60: "#424A58",

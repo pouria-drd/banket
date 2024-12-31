@@ -1,83 +1,103 @@
-import React from "react";
+import Link from "next/link";
 import {
+    ArrowUpLeftIcon,
     BanketIcon2,
     InstagramIcon,
     LinkedInIcon,
+    MessageIcon,
     TwitterIcon,
 } from "@/components/icons";
-import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="bg-ada-secondary-50 text-white">
+        <footer className="text-white">
             {/* Large Screen Layout */}
-            <div className="hidden md:flex items-center justify-between px-16 py-10">
+            <div
+                className="hidden md:flex items-center justify-between 
+                bg-ada-secondary-50 px-12 lg:px-24 2xl:px-32 py-10 pt-16">
                 {/* Newsletter */}
                 <div className="max-w-xs">
-                    <p className="mb-4 text-gray-300">
+                    <p className="mb-4 text-sm">
                         برای اطلاع از خبرهای جدید عضو خبرنامه ما شوید.
                     </p>
-                    <div className="flex items-center">
+                    <div
+                        className="relative bg-ada-dark-neutral-40
+                        flex items-center justify-center
+                        rounded-3xl p-1.5 pr-4">
+                        <MessageIcon className="text-ada-neutral-60" />
+
                         <input
                             type="email"
                             placeholder="ایمیل خود را وارد کنید"
-                            className="w-full px-4 py-2 rounded-l-md bg-gray-800 text-gray-400 placeholder-gray-500 focus:outline-none"
+                            className="w-full p-2
+                            bg-transparent
+                            text-ada-neutral-60
+                            placeholder-ada-neutral-60
+                            focus:outline-none"
                         />
-                        <button className="px-4 py-2 bg-yellow-500 text-black rounded-r-md hover:bg-yellow-600">
-                            ➡️
+                        <button
+                            className="bg-yellow-500 hover:bg-yellow-600
+                            transition-all text-white rounded-[50%] p-2">
+                            <ArrowUpLeftIcon />
                         </button>
                     </div>
                 </div>
 
                 {/* Navigation Links */}
-                <div className="flex space-x-16">
-                    <div>
-                        <h3 className="text-lg font-semibold mb-4">
+                <div className="flex items-start justify-between gap-20">
+                    <div className="space-y-4">
+                        <Link
+                            href="#"
+                            className="text-sm hover:text-ada-primary-50">
                             لینک اصلی
-                        </h3>
-                        <ul className="space-y-2">
+                        </Link>
+                        <ul className="text-ada-neutral-60 space-y-4">
                             <li>
-                                <a
+                                <Link
                                     href="#"
-                                    className="text-gray-400 hover:text-white">
+                                    className="hover:text-ada-primary-50">
                                     صفحه اصلی
-                                </a>
+                                </Link>
                             </li>
-                            <li>
-                                <a
+                            <li
+                                className=" py-2
+                                    border-y border-ada-dark-outline-neutral-60">
+                                <Link
                                     href="#"
-                                    className="text-gray-400 hover:text-white">
+                                    className="hover:text-ada-primary-50">
                                     سرویس‌ها
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="#"
-                                    className="text-gray-400 hover:text-white">
+                                    className="hover:text-ada-primary-50">
                                     افتتاح حساب
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
 
-                    <div>
-                        <h3 className="text-lg font-semibold mb-4">
+                    <div className="space-y-4">
+                        <Link
+                            href="#"
+                            className="text-sm hover:text-ada-primary-50">
                             درباره ما
-                        </h3>
-                        <ul className="space-y-2">
+                        </Link>
+                        <ul className="text-ada-neutral-60 space-y-4">
                             <li>
-                                <a
+                                <Link
                                     href="#"
-                                    className="text-gray-400 hover:text-white">
+                                    className="hover:text-ada-primary-50">
                                     پشتیبانی
-                                </a>
+                                </Link>
                             </li>
-                            <li>
-                                <a
+                            <li className="py-2 border-y border-ada-dark-outline-neutral-60">
+                                <Link
                                     href="#"
-                                    className="text-gray-400 hover:text-white">
+                                    className="hover:text-ada-primary-50">
                                     بلاگ
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -113,93 +133,119 @@ const Footer = () => {
             </div>
 
             {/* Mobile Layout */}
-            <div className="md:hidden px-6 py-10 space-y-8">
+            <div className="bg-ada-secondary-50 md:hidden px-4 py-10 space-y-12">
                 {/* Logo and Social Links */}
-                <div className="text-center">
-                    <div className="text-3xl font-bold text-yellow-500">
-                        Banket
+                <div className="flex flex-col xs:flex-row-reverse items-center justify-between gap-8">
+                    <div className="text-4xl font-bold text-yellow-500">
+                        <BanketIcon2 />
                     </div>
-                    <div className="flex justify-center items-center space-x-4 mt-4">
-                        <a
+                    <div
+                        className="flex items-center justify-center xs:justify-start gap-4
+                        text-ada-dark-neutral-90 w-full px-1">
+                        <Link
                             href="#"
-                            className="text-gray-400 hover:text-white text-xl">
-                            X
-                        </a>
-                        <a
+                            className="hover:text-ada-primary-50 text-xl">
+                            <LinkedInIcon />
+                        </Link>
+                        <Link
                             href="#"
-                            className="text-gray-400 hover:text-white text-xl">
-                            Instagram
-                        </a>
-                        <a
+                            className="hover:text-ada-primary-50 text-xl
+                            border-r border-ada-dark-outline-neutral-60 pr-5">
+                            <InstagramIcon />
+                        </Link>
+                        <Link
                             href="#"
-                            className="text-gray-400 hover:text-white text-xl">
-                            LinkedIn
-                        </a>
+                            className="hover:text-ada-primary-50 text-xl
+                            border-r border-ada-dark-outline-neutral-60 pr-5">
+                            <TwitterIcon />
+                        </Link>
                     </div>
                 </div>
 
                 {/* Navigation Links */}
-                <div className="text-center">
-                    <div className="mb-4">
-                        <h3 className="text-lg font-semibold">لینک اصلی</h3>
-                        <ul className="space-y-2">
+                <div className="flex items-start justify-center gap-20">
+                    <div className="space-y-4">
+                        <Link
+                            href="#"
+                            className="text-sm hover:text-ada-primary-50">
+                            لینک اصلی
+                        </Link>
+                        <ul className="text-ada-neutral-60 space-y-4">
                             <li>
-                                <a
+                                <Link
                                     href="#"
-                                    className="text-gray-400 hover:text-white">
+                                    className="hover:text-ada-primary-50">
                                     صفحه اصلی
-                                </a>
+                                </Link>
                             </li>
-                            <li>
-                                <a
+                            <li
+                                className=" py-2
+                                    border-y border-ada-dark-outline-neutral-60">
+                                <Link
                                     href="#"
-                                    className="text-gray-400 hover:text-white">
+                                    className="hover:text-ada-primary-50">
                                     سرویس‌ها
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="#"
-                                    className="text-gray-400 hover:text-white">
+                                    className="hover:text-ada-primary-50">
                                     افتتاح حساب
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h3 className="text-lg font-semibold">درباره ما</h3>
-                        <ul className="space-y-2">
+
+                    <div className="space-y-4">
+                        <Link
+                            href="#"
+                            className="text-sm hover:text-ada-primary-50">
+                            درباره ما
+                        </Link>
+                        <ul className="text-ada-neutral-60 space-y-4">
                             <li>
-                                <a
+                                <Link
                                     href="#"
-                                    className="text-gray-400 hover:text-white">
+                                    className="hover:text-ada-primary-50">
                                     پشتیبانی
-                                </a>
+                                </Link>
                             </li>
-                            <li>
-                                <a
+                            <li className="py-2 border-y border-ada-dark-outline-neutral-60">
+                                <Link
                                     href="#"
-                                    className="text-gray-400 hover:text-white">
+                                    className="hover:text-ada-primary-50">
                                     بلاگ
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 {/* Newsletter */}
-                <div className="text-center">
-                    <p className="mb-4 text-gray-300">
+                <div className="max-w-xs mx-auto">
+                    <p className="mb-4 text-sm">
                         برای اطلاع از خبرهای جدید عضو خبرنامه ما شوید.
                     </p>
-                    <div className="flex justify-center">
+                    <div
+                        className="relative bg-ada-dark-neutral-40
+                        flex items-center justify-center
+                        rounded-3xl p-1.5 pr-4">
+                        <MessageIcon className="text-ada-neutral-60" />
+
                         <input
                             type="email"
                             placeholder="ایمیل خود را وارد کنید"
-                            className="px-4 py-2 w-2/3 rounded-l-md bg-gray-800 text-gray-400 placeholder-gray-500 focus:outline-none"
+                            className="w-full p-2
+                            bg-transparent
+                            text-ada-neutral-60
+                            placeholder-ada-neutral-60
+                            focus:outline-none"
                         />
-                        <button className="px-4 py-2 bg-yellow-500 text-black rounded-r-md hover:bg-yellow-600">
-                            ➡️
+                        <button
+                            className="bg-yellow-500 hover:bg-yellow-600
+                            transition-all text-white rounded-[50%] p-2">
+                            <ArrowUpLeftIcon />
                         </button>
                     </div>
                 </div>
@@ -208,7 +254,7 @@ const Footer = () => {
             {/* Footer Bottom */}
             <div
                 className="border-t border-ada-dark-outline-neutral-60
-                py-4 text-center text-sm text-gray-400">
+                bg-ada-secondary-50 py-4 text-center text-sm text-gray-400">
                 © تمامی حقوق متعلق به عصردانش افزار می‌باشد.
             </div>
         </footer>
