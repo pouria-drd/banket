@@ -5,4 +5,5 @@ export * from "./in-banket";
 export * from "./facilities";
 export * from "./investment";
 export * from "./open-account";
+export * from "./download-banket";
 export * from "./banking-services";

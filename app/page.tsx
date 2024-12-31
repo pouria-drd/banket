@@ -2,6 +2,7 @@ import { Ticker } from "@/components/ticker";
 import {
     BankingServicesSection,
     BuyGoldSection,
+    DownloadBanket,
     FacilitiesSection,
     FeeSection,
     InBanketSection,
@@ -24,7 +25,7 @@ function Home() {
             <InvestmentSection className="app-px py-12 sm:py-28" />
             <FacilitiesSection className="app-px py-12 sm:py-28" />
             <FeeSection className="app-px py-12 sm:py-28" />
-            <OpenAccountSection className="app-px py-12 sm:py-28" />
+            <DownloadBanket className="app-px py-12 sm:py-28" />
         </div>
     );
 }
