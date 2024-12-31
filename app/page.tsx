@@ -24,6 +24,7 @@ function Home() {
             <InvestmentSection className="app-px py-12 sm:py-28" />
             <FacilitiesSection className="app-px py-12 sm:py-28" />
             <FeeSection className="app-px py-12 sm:py-28" />
+            <OpenAccountSection className="app-px py-12 sm:py-28" />
         </div>
     );
 }

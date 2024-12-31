@@ -59,6 +59,18 @@ export default {
                         95: "#F5F5F5",
                         99: "#FBFBFB",
                     },
+
+                    dark: {
+                        neutral: {
+                            90: "#DBDDE2",
+                        },
+
+                        outline: {
+                            neutral: {
+                                60: "#424A58",
+                            },
+                        },
+                    },
                 },
             },
         },
