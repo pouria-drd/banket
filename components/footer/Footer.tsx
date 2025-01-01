@@ -8,13 +8,17 @@ import {
     TwitterIcon,
 } from "@/components/icons";
 
+import styles from "./footer.module.css";
+
 const Footer = () => {
     return (
-        <footer className="text-white">
+        <footer className={`text-white ${styles.footer}`}>
+            <div className={styles.footerRightCurve} />
+
             {/* Large Screen Layout */}
             <div
                 className="hidden md:flex items-center justify-between 
-                bg-ada-secondary-50 px-12 lg:px-24 2xl:px-32 py-10 pt-16">
+                bg-ada-secondary-50 px-12 lg:px-24 2xl:px-32 py-10 pt-24">
                 {/* Newsletter */}
                 <div className="max-w-xs">
                     <p className="mb-4 text-sm">
