@@ -12,10 +12,23 @@ import {
 } from "@/components/home";
 
 function Home() {
-    const words = ["دیجیتال بانک", "وام بانکی", "خرید طلا", "سرمایه گذاری"];
+    const words = [
+        "دیجیتال بانک",
+        "وام بانکی",
+        "خرید طلا",
+        "سرمایه گذاری",
+        "دیجیتال بانک",
+        "وام بانکی",
+        "خرید طلا",
+        "سرمایه گذاری",
+        "دیجیتال بانک",
+        "وام بانکی",
+        "خرید طلا",
+        "سرمایه گذاری",
+    ];
 
     return (
-        <div className="">
+        <div>
             <LoanSection className="pt-6 sm:pt-[104px] app-px py-12 sm:py-28" />
             <Ticker words={words} />
             <OpenAccountSection className="app-px py-12 sm:py-28" />

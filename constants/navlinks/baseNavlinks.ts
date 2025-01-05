@@ -1,6 +1,6 @@
 const baseNavlinks: NavLink[] = [
     {
-        name: "صفحه‌اصلی",
+        name: "خانه",
         url: "/",
     },
 
@@ -15,13 +15,13 @@ const baseNavlinks: NavLink[] = [
     },
 
     {
-        name: "تماس‌با‌ما",
-        url: "/contact-us",
+        name: "بلاگ",
+        url: "/blog",
     },
 
     {
-        name: "درباره‌ما",
-        url: "/about-us",
+        name: "تماس‌با‌ما",
+        url: "/contact-us",
     },
 ];
 
