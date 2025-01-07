@@ -2,7 +2,7 @@ import Image from "next/image";
 import { SearchIcon } from "@/components/icons";
 import { Caption, Container, H1Title } from "@/components/ui";
 
-function page() {
+function BlogsPage() {
     return (
         <div className="flex flex-col gap-10 app-px py-10">
             {/* Search Area */}
@@ -92,4 +92,4 @@ function page() {
     );
 }
 
-export default page;
+export default BlogsPage;
