@@ -30,7 +30,7 @@ const OpenAccountSection = (props: OpenAccountSectionProps) => {
 
             <Container className="w-full p-4">
                 <video
-                    loop
+                    // loop
                     muted
                     autoPlay
                     width={900}

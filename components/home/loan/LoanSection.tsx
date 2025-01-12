@@ -12,7 +12,7 @@ const LoanSection = (props: LoanSectionProps) => {
     return (
         <section
             className={cn(
-                `flex flex-col sm:flex-row items-center justify-between gap-10 sm:gap-0`,
+                `bg-[#fef9eb] flex flex-col sm:flex-row items-center justify-between gap-10 sm:gap-0 min-h-[83.5dvh]`,
                 props.className
             )}>
             <Container className="items-start justify-start gap-0 w-full sm:w-fit">
@@ -44,7 +44,7 @@ const LoanSection = (props: LoanSectionProps) => {
                     width={375}
                     height={375}
                     priority
-                    className="w-[239px] sm:w-[230px] md:w-[320px] lg:w-[375px]"
+                    className="w-[239px] sm:w-[230px] md:w-[320px] lg:w-[500px]"
                 />
             </div>
         </section>
