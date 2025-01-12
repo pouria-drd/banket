@@ -10,7 +10,7 @@ const BuyGoldSection = (props: LoanSectionProps) => {
     return (
         <section
             className={cn(
-                `flex flex-col items-center bg-ada-secondary-50 justify-between gap-6 sm:gap-10`,
+                `flex flex-col items-center bg-black justify-between gap-6 sm:gap-10`,
                 props.className
             )}>
             <Container className="items-center justify-center gap-6 sm:gap-10 w-full sm:w-fit">
@@ -35,9 +35,18 @@ const BuyGoldSection = (props: LoanSectionProps) => {
                 </Button>
             </Container>
 
-            <div>
-                <GoldSafe />
-            </div>
+            <Container className="w-full p-4">
+                <video
+                    loop
+                    muted
+                    autoPlay
+                    width={900}
+                    height={1200}
+                    className="border-none p-4 
+                    w-96 bg-transparent md:w-[420px] lg:w-[500px]">
+                    <source src="/videos/goldSection2.mp4" type="video/mp4" />
+                </video>
+            </Container>
         </section>
     );
 };
